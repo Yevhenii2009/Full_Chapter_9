@@ -170,17 +170,10 @@ int main() {
     cout << "compare: " << s.compare("Hello your world!") << "\n\n";
 
     // 14. Container adaptors
-    cout << "[container adaptors]\n";
-
-    stack<int> st;
-    st.push(1);
-    st.push(2);
-    cout << "stack top: " << st.top() << "\n";
-
-    queue<int> q;
-    q.push(10);
-    q.push(20);
-    cout << "queue front: " << q.front() << "\n\n";
-
+    deque<int> st;           
+    st.push_back(1);       
+    st.push_back(2);
+    cout << "stack top: " << st.back() << "\n"; 
+    st.pop_back();           
     cout << "=== END OF CHAPTER 9 ===\n";
 }
